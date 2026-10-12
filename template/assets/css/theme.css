@@ -1,0 +1,64 @@
+/* ==========================================================
+   EASY COLOR SETTINGS
+   Change the color codes below (e.g. #31866f) to restyle your
+   whole site. Find colors at https://htmlcolorcodes.com
+   ========================================================== */
+:root {
+	--page-background:  #ffffff;  /* edge of page */
+	--content-background: #d5bfd6; /* main content area */
+	--footer-background: #a772c0;
+	--menu-color:       #ad43df;  /* left-hand menu & buttons */
+	--accent-color:     #af4ee7;  /* headings, links, bold text */
+	--hover-color:      #ba71ff;  /* link color when hovered */
+	--text-color:       #000000;  /* normal text */
+
+	/* Right-hand menu / sidebar */
+	--titlebar-text:      var(--page-background); /* you can also reference other variables */
+	--menu-active-background: var(--page-background); /* highlighted (current) menu item */
+	--sidebar-background: #ad43df; /* sidebar background (also the mobile menu panel) */
+	--sidebar-text:       #ffffff; /* your name and menu links */
+	--sidebar-subtext:    #e8d3f5; /* title/institution line and social icons */
+	--menu-divider:       #c77be8; /* lines between menu items */
+	--menu-active-text:   #ad43df;  /* text of highlighted menu item */
+	--titlebar-background: #222222; /* top bar on phones */
+	--titlebar-button:    #ad43df;  /* phone menu (hamburger) button */
+}
+
+/* ---------- Applies the colors above (no need to edit) ---------- */
+body { background-color: var(--page-background) !important; }
+nav { background-color: var(--menu-color) !important; }
+#header { background: var(--sidebar-background) !important; color: var(--sidebar-subtext); }
+#header h1, #header h1 a, #header h2, #header h3 { color: var(--sidebar-text); }
+#header header p, #header > header p { color: var(--sidebar-subtext); }
+#header a, #header > footer .icons li a { color: var(--sidebar-subtext); }
+#header a:hover { color: var(--sidebar-text) !important; }
+#header > nav ul li { border-top-color: var(--menu-divider); }
+#header > nav ul li a { color: var(--sidebar-text) !important; }
+#header > nav ul li a.active { background: var(--menu-active-background); color: var(--menu-active-text) !important; }
+#titleBar { background: var(--titlebar-background); color: var(--titlebar-text); }
+#titleBar .title, #titleBar .title a { color: var(--titlebar-text); }
+#titleBar .toggle:before { background: var(--titlebar-button); color: var(--titlebar-text); }
+#wrapper { background-color: var(--content-background) !important; }
+#footer { background-color: var(--footer-background) !important; }
+body, p, li { color: var(--text-color); }
+.button.primary { background-color: var(--menu-color); color: var(--text-color) !important; }
+strong, b, a { color: var(--accent-color); }
+h1, h2, h3, h4, h5, h6 { color: var(--accent-color); }
+ul.alt li, .features article { border-top-color: var(--menu-color) !important; }
+a { border-bottom-color: var(--text-color) !important; }
+a:hover { color: var(--hover-color) !important; border-bottom-color: var(--accent-color) !important; }
+
+.features article .date { color: var(--text-color); font-size: 0.85em; font-weight: 700; margin: -1.5em 0 1em 0; }
+
+.profile-heading { display: flex; align-items: center; gap: 1em; }
+.profile-heading img { width: 8em; object-fit: cover; object-position: center 35%; flex: 0 0 auto; }
+.profile-heading h3 { flex: 1; margin: 0; }
+
+/* Publications: wrapped lines are indented under the first line */
+.hangingindent { padding-left: 2em; }
+p.hangingindent { text-indent: -2em; }
+
+@media screen and (max-width: 736px) {
+	.profile-heading { gap: .5em; }
+	.profile-heading img { width: 5em; object-fit: contain; }
+}
