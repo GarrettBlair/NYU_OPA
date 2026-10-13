@@ -4,6 +4,7 @@
    whole site. Find colors at https://htmlcolorcodes.com
    ========================================================== */
 :root {
+	/* Easy color settings for the main page elements */
 	--page-background:  #ffffff;  /* edge of page */
 	--content-background: #d5bfd6; /* main content area */
 	--footer-background: #a772c0;
@@ -11,7 +12,7 @@
 	--accent-color:     #af4ee7;  /* headings, links, bold text */
 	--hover-color:      #ba71ff;  /* link color when hovered */
 	--text-color:       #000000;  /* normal text */
-
+	--button-text-color: #ffffff;  /* text color for primary buttons */
 	/* Right-hand menu / sidebar */
 	--titlebar-text:      var(--page-background); /* you can also reference other variables */
 	--menu-active-background: var(--page-background); /* highlighted (current) menu item */
@@ -41,7 +42,7 @@ nav { background-color: var(--menu-color) !important; }
 #wrapper { background-color: var(--content-background) !important; }
 #footer { background-color: var(--footer-background) !important; }
 body, p, li { color: var(--text-color); }
-.button.primary { background-color: var(--menu-color); color: var(--text-color) !important; }
+.button.primary { background-color: var(--menu-color); color: var(--button-text-color) !important; }
 strong, b, a { color: var(--accent-color); }
 h1, h2, h3, h4, h5, h6 { color: var(--accent-color); }
 ul.alt li, .features article { border-top-color: var(--menu-color) !important; }
