@@ -17,6 +17,19 @@ The website itself lives in the [`docs/`](docs) folder. Design adapted from "Rea
 3. Choose your branch (usually `main`) and the **/root** folder, then click **Save**.
 4. After a minute or two, your site will be live at `https://<your-github-username>.github.io/<repository-name>/`.
 
+## Helpful links
+
+Helpful videos I used:
+- Baeu Carnes @ freeCodeCamp - "How to Put a Website Online: Template, Coding, Domain, Hosting, and DNS" https://www.youtube.com/watch?v=NQP89ish9t8
+- Tony Teaches Tech - "How to Use a Custom Domain with GitHub Pages" https://www.youtube.com/watch?v=EX4w9hsduNA
+
+Other templates I like: 
+- https://html5up.net/editorial
+- https://html5up.net/hyperspace
+- https://html5up.net/strata
+- https://html5up.net/dopetrope
+- https://html5up.net/miniport
+
 ## Customize the site
 
 Preview changes by double-clicking `docs/index.html` to open it in your browser. Edit files with a plain text editor (Notepad, VS Code), not Word. You can also edit files directly on GitHub (click a file, then the pencil icon).
@@ -46,4 +59,3 @@ Replace this file with your own CV, keeping the name `CV.pdf`.
 
 ### Colors: `docs/assets/css/theme.css`
 The colors are listed at the top of the file (page, content, menu, links, text, and sidebar). Change the `#xxxxxx` codes. A color picker is available at [htmlcolorcodes.com](https://htmlcolorcodes.com).
-
