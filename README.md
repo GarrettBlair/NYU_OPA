@@ -14,7 +14,7 @@ The website itself lives in the [`docs/`](docs) folder. Design adapted from "Rea
 
 1. In your repository, go to **Settings → Pages**.
 2. Under **Build and deployment**, set **Source** to "Deploy from a branch".
-3. Choose your branch (usually `main`) and the **/docs** folder, then click **Save**.
+3. Choose your branch (usually `main`) and the **/root** folder, then click **Save**.
 4. After a minute or two, your site will be live at `https://<your-github-username>.github.io/<repository-name>/`.
 
 ## Customize the site
